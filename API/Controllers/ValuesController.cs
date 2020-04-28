@@ -12,17 +12,17 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ValueController : ControllerBase
+    public class ValuesController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<ValueController> _logger;
+        private readonly ILogger<ValuesController> _logger;
         private readonly DataContext _context;
 
-        public ValueController(ILogger<ValueController> logger, DataContext context)
+        public ValuesController(ILogger<ValuesController> logger, DataContext context)
         {
             _logger = logger;
             _context = context;
