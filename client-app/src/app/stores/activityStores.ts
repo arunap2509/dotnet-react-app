@@ -39,7 +39,6 @@ class ActivityStore {
           this.initialLoader = false;
         });
       })
-      console.log(this.groupActivitiesByDate(activities));
     } catch (err) {
       runInAction('loading activities error',() => {
         this.initialLoader = false;
